@@ -1,0 +1,28 @@
+<div class="card text-white bg-info" style="width: 18rem;">
+  <img
+    class="card-img-top"
+    src="https://play-lh.googleusercontent.com/F5A8ym-RNQIDRWaLq-tS3b1w47SQBJ66ZVVRjXiuNNEBkpPTdrqxnPnbwzSMv1C-rg"
+    alt="Card image cap"
+  />
+  <div class="card-body">
+    <h5 class="card-title">Deseja visualizar uma tabuada?</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Digite a tabuada que deseja apresentar
+    </h6>
+    <div>
+      <input
+        class="card-title"
+        type="number"
+        id="number"
+        [(ngModel)]="numero"
+      />
+      <button type="button" (click)="tab()" class="btn btn-warning">
+        Mostrar
+      </button>
+      <button type="button" (click)="apagar()" class="btn btn-danger">
+        Apagar
+      </button>
+    </div>
+    <div id="container"></div>
+  </div>
+</div>
